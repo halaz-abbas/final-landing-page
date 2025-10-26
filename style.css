@@ -1,0 +1,1268 @@
+ html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1; }
+
+
+/* Navbar */
+.navbar{
+  position:sticky ;
+}
+
+.navbar-logo {
+  padding-left: 70px;
+}
+
+.nav-item {
+  padding-right: 70px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 30px;
+  background-color: #9c3212;
+  margin: 15px 30px;
+}
+
+/* Hero Section */
+.premium {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77.5px;
+  color: rgba(46, 46, 46, 1);
+}
+
+.hero-swiper-pagination-bullet {
+  background-color: rgb(151, 53, 45) !important;
+  opacity: 0.8 !important;
+  width: 20px;
+  height: 3px;
+  margin: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  text-align: center;
+}
+
+.hero-swiper-pagination-bullet-active {
+  background-color: #b02303 !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+.hero-swiper-pagination {
+  bottom: 30px; /* المسافة من أسفل السلايدر */
+  /* تمركز أفقي */
+  transform: translateX(-50%);
+  margin-right: 3px;
+
+  display: flex; /* تجعل العناصر الداخلية تتوزع أفقيًا */
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.blazing {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 5%;
+  color: rgba(128, 128, 128, 1);
+}
+
+.btnc {
+  color: #edebe8;
+  background-color: rgb(214, 68, 68);
+  transition: 0.3s;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btnc:hover {
+  background-color: #edebe8;
+  color: rgb(125, 5, 5);
+}
+
+.btn-group-custom {
+  padding: 60px 0;
+  margin-right: 30px;
+  display: flex;
+  gap: 13px;
+  font-size: 20px;
+}
+
+.btn-group-custom a {
+  flex: 1;
+}
+
+/* new css for card */
+/* ======== الكارد العام ======== */
+/* ======== الكارد العام ======== */
+.card {
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  max-width: 320px; /* الحد الأقصى للكارد */
+  margin: 0 auto; /* توسيط الكارد في الأعمدة */
+}
+
+/* تأثير عند المرور */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* الصورة */
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 20px auto 10px;
+}
+
+/* محتوى الكارد */
+.card-body {
+  padding: 20px;
+}
+
+/* العنوان */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+/* النص */
+.card-text {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Swiper */
+.cards-swiper {
+  padding: 40px 10px; /* تقليل padding على الأجهزة الصغيرة */
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #cacfd5;
+}
+
+.swiper-button-prev:hover img,
+.swiper-button-next:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .card {
+    max-width: 280px;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    max-width: 250px;
+  }
+  .card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; /* تأخذ كامل العرض في الموبايل */
+  }
+  .cards-swiper {
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 
+section for list  */
+/* ===== Pricing Section ===== */
+.pricing-section {
+  padding: 50px 15px;
+  display: flex;
+  flex-wrap: wrap; /* يسمح للكروت بالانتقال للسطر التالي على الشاشات الصغيرة */
+  justify-content: center;
+  gap: 20px; /* مسافة بين الكروت */
+  align-items: flex-start;
+}
+
+/* Plan Card */
+.plan-card {
+  border: 1px solid #f7941d;
+  border-radius: 8px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;       /* عرض مرن */
+  max-width: 300px;  /* الحد الأقصى */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Titles and Prices */
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #434543ff;
+}
+
+/* Features List */
+.plan-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 5px;
+}
+
+.plan-features .fa-check {
+  color: #0d0d0dff;
+  margin-left: 10px;
+}
+
+/* Toggle & Buttons */
+.toggle-switch-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-choose-plan {
+  border-color: #f7941d;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #0d0d0dff;
+}
+
+.custom-toggle {
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  padding: 5px 15px;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-discount {
+  margin: 30px auto; /* توسيط الزر */
+  display: block;
+  background-color: #f0a54aff;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Progress Line */
+.alanaoen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  flex-wrap: wrap; /* يسمح بالنزول عند الشاشات الصغيرة */
+  gap: 10px;
+}
+
+.line {
+  display: flex;
+  width: 100%;       /* يجعل الخط ممتد بالكامل */
+  max-width: 900px;
+  height: 5px;
+  border-radius: 50px;
+  margin-bottom: 60px;
+  background-color: #9c8484;
+}
+
+.half-right {
+  width: 50%;
+  height: 100%;
+  background-color: #942020;
+  border-radius: 25px;
+}
+
+.half-left {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 25px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .plan-card {
+    max-width: 250px;
+  }
+  .plan-title {
+    font-size: 1.3rem;
+  }
+  .plan-price {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .plan-card {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-card {
+    max-width: 100%; /* يأخذ كامل عرض الشاشة */
+  }
+  .alanaoen {
+    flex-direction: column; /* ترتيب العناصر رأسياً */
+    gap: 5px;
+  }
+  .line {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .plan-title {
+    font-size: 1.2rem;
+  }
+  .plan-price {
+    font-size: 1.7rem;
+  }
+  .btn-choose-plan {
+    padding: 8px 20px;
+  }
+}
+
+
+/* النسخة الأصلية بدون أي تغيير للشاشات الكبيرة */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+}
+
+.header-container {
+  position: relative;
+}
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hh {
+  margin-left: 150px;
+}
+.hhh {
+  margin-left: 250px;
+}
+#c1 {
+  margin-top: 80px;
+  margin-left: 180px;
+}
+#c2 {
+  margin-bottom: 100px;
+}
+
+.testimonials-section h2 {
+  position: relative;
+  z-index: 1;
+  color: #333;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #c9c6c6;
+  height: auto;
+  width: 300px;
+}
+
+.testimonial-card img {
+  width: 80px; 
+  height: auto; 
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.testimonial-quote {
+  color: #555;
+  line-height: 32px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+
+.client-name {
+  color: #333;
+}
+
+.client-logo {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.small-card {
+  font-size: 0.9rem;
+  padding: 1rem !important;
+}
+
+/* ====== استجابة الهواتف ====== */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 90%;      /* الكارد يصبح مرن */
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  .testimonial-card img {
+    width: 60px;     /* تصغير الصورة */
+  }
+  .testimonial-quote {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+/* نسخة أصلية دون تعديل على الشاشات الكبيرة */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+}
+
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* إزالة المارجن الثابت على الشاشات الصغيرة */
+@media (max-width: 992px) {
+  .hh {
+    margin-left: 0 !important;
+  }
+  .hhh {
+    margin-left: 0 !important;
+  }
+  #c1 {
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+  }
+  #c2 {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 10px;
+  }
+}
+/* نسخة أصلية للديسك توب */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* أيقونة الاقتباس الكبيرة */
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* الكروت */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #c9c6c6;
+  height: auto;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ====== استجابة الهواتف ====== */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 45%; /* بطاقتان في الصف على التابلت */
+  }
+  .testimonial-card img {
+    width: 60px; /* تصغير الصور */
+  }
+  .hh, .hhh, #c1, #c2 {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95%; /* البطاقة تأخذ معظم عرض الهاتف */
+  }
+  .testimonial-card img {
+    width: 0;   /* تخفي الصورة */
+    display: none;
+  }
+  .header-container::before {
+    display: none; /* تخفي أيقونة الاقتباس */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: 100%; /* كامل عرض الشاشة */
+  }
+}
+/* نسخة أصلية للديسك توب */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* أيقونة الاقتباس الكبيرة */
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* الكروت */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #c9c6c6;
+  height: auto;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ====== استجابة الهواتف ====== */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 45%; /* بطاقتان في الصف على التابلت */
+  }
+  .testimonial-card img {
+    width: 60px; /* تصغير الصور */
+  }
+  .hh, .hhh, #c1, #c2 {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95%; /* البطاقة تأخذ معظم عرض الهاتف */
+  }
+  .testimonial-card img {
+    width: 0;   /* تخفي الصورة */
+    display: none;
+  }
+  .header-container::before {
+    display: none; /* تخفي أيقونة الاقتباس */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: 100%; /* كامل عرض الشاشة */
+  }
+}
+/* نسخة أصلية للديسك توب */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* أيقونة الاقتباس الكبيرة */
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* الكروت */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #c9c6c6;
+  height: auto;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ====== استجابة الهواتف ====== */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 45%; /* بطاقتان في الصف على التابلت */
+  }
+  .testimonial-card img {
+    width: 60px; /* تصغير الصور */
+  }
+  .hh, .hhh, #c1, #c2 {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95%; /* البطاقة تأخذ معظم عرض الهاتف */
+  }
+  .testimonial-card img {
+    width: 0;   /* تخفي الصورة */
+    display: none;
+  }
+  .header-container::before {
+    display: none; /* تخفي أيقونة الاقتباس */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: 100%; /* كامل عرض الشاشة */
+  }
+}
+/* نسخة أصلية للديسك توب */
+.testimonials-section {
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* أيقونة الاقتباس الكبيرة */
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("./assets/Quote Mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* الكروت */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #c9c6c6;
+  height: auto;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ====== استجابة الهواتف ====== */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 45%; /* بطاقتان في الصف على التابلت */
+  }
+  .testimonial-card img {
+    width: 60px; /* تصغير الصور */
+  }
+  .hh, .hhh, #c1, #c2 {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95%; /* البطاقة تأخذ معظم عرض الهاتف */
+  }
+  .testimonial-card img {
+    width: 0;   /* تخفي الصورة */
+    display: none;
+  }
+  .header-container::before {
+    display: none; /* تخفي أيقونة الاقتباس */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: 100%; /* كامل عرض الشاشة */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95%;      /* يحتل معظم عرض الشاشة الصغيرة */
+    margin: 10px auto;
+  }
+  .testimonial-card img {
+    width: 50px;     /* أصغر حجم للصور */
+  }
+  .testimonial-quote {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .logo-text {
+    font-size: 1rem;
+  }
+  .header-container::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 10px;       /* يضمن عدم تشويه التصميم */
+  }
+  .quote-icon {
+    display: none !important;
+  }
+}
+
+
+.clients-section {
+  /* padding: 50px 0; */
+
+  text-align: left;
+  margin-left: 50px;
+}
+
+/* نمط للعناوين والنصوص */
+.clients-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212529;
+}
+.clients-section p {
+  font-size: 1.1rem;
+  color: #3e4042;
+  margin-bottom: 30px;
+  max-width: 450px; /* تحديد عرض النص لجعله مشابه للصورة */
+}
+
+/* حاوية الشعارات */
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* المسافة بين الشعارات */
+  align-items: center;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+/* ترتيب الشعارات في الأعمدة */
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* hi  */
+
+.hi-section {
+ 
+  padding: 100px 15px;
+  text-align: center;
+  position: relative; 
+  background: rgb(250, 251, 252);
+  width: 1000px;
+  height: 370px;
+  margin-bottom: 80px;
+  border-radius: 24px;
+}
+
+.headline {
+  /* Styling for the main text */
+  font-size: 3rem; /* Large font size */
+  font-weight: 600; /* Semi-bold */
+  color: #212529; /* Dark text color */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  /* Styling for the red WhatsApp button */
+  background-color: rgba(176, 0, 0, 1); /* Custom red color similar to the image */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex; /* Allows icon and text to align */
+  align-items: center;
+  border: none;
+}
+
+.whatsapp-icon {
+
+  display: inline-block;
+  width: 15px; 
+ 
+  margin: 12px;
+
+  border-radius: 50%;
+ 
+}
+
+/* Triangle Styles */
+.triangle {
+  position: absolute;
+  width: 30px; /* Adjust size of the triangle container */
+  height: 30px; /* Adjust size of the triangle container */
+  background-image: url("path/to/your/red-triangle-image.png"); /* <<< CHANGE THIS PATH */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1; /* Ensure triangles are behind the text */
+}
+
+/* Positioning the triangles based on the image */
+.triangle-top-center {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg); /* Adjust rotation if your image is not already pointing up */
+}
+
+.triangle-bottom-left {
+  bottom: 60px;
+  left: 10%;
+  transform: rotate(-90deg); /* Adjust rotation to point left */
+}
+
+.triangle-bottom-right {
+  bottom: 60px;
+  right: 10%;
+  transform: rotate(90deg); /* Adjust rotation to point right */
+}
+
+/* Adjustments for a slightly different position for the bottom right one to match the image */
+/* Note: The bottom right one in the image seems to be a bit lower and further right. */
+.triangle-bottom-right-alt {
+  bottom: 20px; /* Lower position */
+  right: 5%; /* Further right position */
+  transform: rotate(180deg); /* Pointing down, or adjust as needed */
+  width: 40px; /* Maybe a bit larger */
+  height: 40px;
+}
+
+/* Adjustments for a slightly different position for the top center one to match the image */
+.triangle-top-center-alt {
+  top: 10px;
+  left: 48%; /* A bit off center to the left */
+}
+.hi-section {
+  padding: 100px 15px;
+  text-align: center;
+  position: relative; 
+  background: rgb(250, 251, 252);
+  width: 1000px; /* ثابت على الديسك توب */
+  max-width: 100%; /* يسمح بالتصغير على الشاشات الصغيرة */
+  height: 370px;
+  margin-bottom: 80px;
+  border-radius: 24px;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  background-color: rgba(176, 0, 0, 1);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+.whatsapp-icon img {
+  width: 15px;
+  margin: 12px;
+}
+
+/* Triangles */
+.triangle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.triangle-top-center-alt { top: 10px; left: 48%; }
+.triangle-bottom-left { bottom: 60px; left: 10%; transform: rotate(-90deg); }
+.triangle-bottom-right-alt { bottom: 20px; right: 5%; transform: rotate(180deg); width: 40px; height: 40px; }
+
+/* ======= استجابة الهواتف ======= */
+@media (max-width: 992px) {
+  .hi-section {
+    height: auto; /* السماح للارتفاع بالتكيف */
+    padding: 80px 15px;
+  }
+  .headline {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hi-section {
+    width: 95%; /* العرض الكامل للشاشة مع هامش صغير */
+    padding: 60px 10px;
+  }
+  .headline {
+    font-size: 2rem;
+  }
+  .triangle {
+    display: none; /* إخفاء كل الصور على الموبايل */
+  }
+}
+
+@media (max-width: 576px) {
+  .headline {
+    font-size: 1.6rem;
+  }
+  .whatsapp-btn {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+}
+
+
+/* footer */
+
+:root {
+  --footer-bg-color: rgba(176, 0, 0, 1);
+}
+.site-footer {
+  background-color: var(--footer-bg-color);
+
+  color: white;
+  width: 100%;
+  height: auto;
+
+  margin-top: auto; /* يجعل الفوتر يلتصق بأسفل الصفحة */
+}
+
+.site-footer h5 {
+  font-weight: bold;
+  color: white !important; /* لضمان أن العناوين بيضاء */
+  font-size: 1rem;
+}
+.site-footer .list-unstyled a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 2.2;
+
+  display: block;
+  transition: color 0.3s;
+}
+.site-footer .list-unstyled a:hover {
+  color: white !important;
+}
+.site-footer .description-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+} /* تنسيق أيقونات التواصل الاجتماعي */
+.social-link {
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+.social-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+} /* تنسيق الخط الفاصل (إذا كنت تريد إظهاره كما في بعض تصاميم
+الفوتر) */
+.footer-divider {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+/* تنسيق حقوق النشر */
+.site-footer p.text-white-50 {
+  font-size: 0.9rem;
+} /*
+تنسيق صورة الشعار (اختياري) */
+.site-footer .logo-area img {
+  filter: brightness(0) invert(1); /* لجعل الشعار أبيض إذا كان أصلاً بلون داكن */
+  max-width: 150px; /* تحديد عرض أقصى للشعار */
+}
+
+
+/* كل شعار */
+.logo-itemw {
+  width: 120px;        
+  height: 80px; 
+       
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;     
+ border: none;   
+ 
+}
+
+.logo-itemw img {
+  width: 100%;           /* الصورة تمتد لتملأ الحاوية */
+  height: 100%;          /* ملء الحاوية بالكامل */
+  object-fit: contain;   /* يحافظ على تناسب الصورة */
+
+}
+.logos-wrapper{
+  gap: 33px;
+} 
+/* كل شعار */
+.logo-itemw {
+  width: 120px;        
+  height: 80px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;     
+  border: none;   
+}
+
+.logo-itemw img {
+  width: 100%;           
+  height: 100%;          
+  object-fit: contain;   
+}
+
+.logos-wrapper {
+  gap: 33px;
+  flex-wrap: wrap; /* يسمح بالتفاف الأعمدة عند الشاشات الصغيرة */
+}
+
+/* أعمدة الشعارات */
+.logo-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ======= استجابة الهواتف ======= */
+@media (max-width: 992px) {
+  .logos-wrapper {
+    justify-content: center; /* توسيط الأعمدة */
+    gap: 20px;
+  }
+  .logo-itemw {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-wrapper {
+    flex-direction: column; /* الأعمدة تتكدس رأسيًا */
+    align-items: center;
+    gap: 20px;
+  }
+  .logo-column-wrapper {
+    flex-direction: row; /* الشعارات داخل العمود أفقية */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo-itemw {
+    width: 90px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-itemw {
+    width: 70px;
+    height: 40px;
+  }
+  .client-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .client-lead {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
