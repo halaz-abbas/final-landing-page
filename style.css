@@ -435,7 +435,7 @@ section for list  */
   z-index: 0;
   width: 150px;
   height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
+  background-image: url('./assets/Quote Mark.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -529,19 +529,7 @@ section for list  */
   font-family: Arial, sans-serif;
 }
 
-.header-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 0;
-  width: 150px;
-  height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* إزالة المارجن الثابت على الشاشات الصغيرة */
 @media (max-width: 992px) {
@@ -586,7 +574,7 @@ section for list  */
   z-index: 0;
   width: 150px;
   height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
+  background-image: url("./assets/Quote Mark.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -651,20 +639,7 @@ section for list  */
   position: relative;
 }
 
-/* أيقونة الاقتباس الكبيرة */
-.header-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 0;
-  width: 150px;
-  height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* الكروت */
 .testimonial-card {
@@ -726,20 +701,7 @@ section for list  */
   position: relative;
 }
 
-/* أيقونة الاقتباس الكبيرة */
-.header-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 0;
-  width: 150px;
-  height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* الكروت */
 .testimonial-card {
@@ -801,20 +763,7 @@ section for list  */
   position: relative;
 }
 
-/* أيقونة الاقتباس الكبيرة */
-.header-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 0;
-  width: 150px;
-  height: 150px;
-  background-image: url("./assets/Quote Mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* الكروت */
 .testimonial-card {
@@ -987,7 +936,7 @@ section for list  */
   position: absolute;
   width: 30px; /* Adjust size of the triangle container */
   height: 30px; /* Adjust size of the triangle container */
-  background-image: url("path/to/your/red-triangle-image.png"); /* <<< CHANGE THIS PATH */
+ /* <<< CHANGE THIS PATH */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1; /* Ensure triangles are behind the text */
