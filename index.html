@@ -576,6 +576,12 @@
       </div>
     </footer>
 
+      <!-- زر العودة للأعلى -->
+<button id="backToTop" title="الرجوع للأعلى">
+  ↑
+</button>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -594,6 +600,24 @@
           bulletActiveClass: "hero-swiper-pagination-bullet-active",
         },
       });
+       const backToTopButton = document.getElementById("backToTop");
+
+  // عند التمرير لأسفل الصفحة، يظهر الزر
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  // عند الضغط على الزر، يرجع إلى الأعلى بسلاسة
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
      
     </script>
   </body>

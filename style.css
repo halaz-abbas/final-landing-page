@@ -5,6 +5,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+* {
+  box-sizing: border-box;
+}
+
 main {
   flex: 1; }
 
@@ -1264,3 +1268,65 @@ section for list  */
     .package-box {
       margin-top: 40px;
     }
+
+
+    /* 🔹 زر العودة للأعلى */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: #c58585;
+  color: rgb(24, 23, 23);
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: none; /* مخفي افتراضيًا */
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #cfd43b;
+  transform: scale(1.1);
+}
+
+/* 📱 استجابة لشاشات الموبايل الصغيرة */
+@media (max-width: 767px) {
+  #backToTop {
+    bottom: 20px;       /* أقرب للأسفل */
+    right: 20px;        /* أقرب للجانب */
+    width: 45px;        /* أصغر عرضًا */
+    height: 45px;
+    font-size: 18px;    /* أصغر في الأيقونة */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* 💻 للأجهزة المتوسطة (تابلت) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #backToTop {
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+/* 🖥️ للأجهزة الكبيرة */
+@media (min-width: 1025px) {
+  #backToTop {
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}
+
+
+    
