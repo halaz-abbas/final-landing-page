@@ -335,6 +335,7 @@ section for list  */
 .btn-discount {
   margin: 30px auto; /* توسيط الزر */
   display: block;
+  margin: 40px;
   background-color: #f0a54aff;
   border: none;
   border-radius: 20px;
@@ -1221,53 +1222,9 @@ section for list  */
 }
 
 
-/* toggle switch */
- 
 
-    .toggle-switch {
-      position: relative;
-      width: 60px;
-      height: 30px;
-      background-color: #b30000;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      vertical-align: middle;
-    }
 
-    .toggle-switch::before {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      background-color: #fff;
-      border-radius: 50%;
-      top: 3px;
-      left: 3px;
-      transition: transform 0.3s ease;
-    }
-
-    .toggle-switch.active {
-      background-color: #007bff;
-    }
-
-    .toggle-switch.active::before {
-      transform: translateX(30px);
-    }
-
-    .discount {
-      background-color: #ffeb3b;
-      color: #333;
-      font-size: 13px;
-      padding: 2px 6px;
-      border-radius: 5px;
-      margin-right: 5px;
-    }
-
-    .package-box {
-      margin-top: 40px;
-    }
+    
 
 
     /* 🔹 زر العودة للأعلى */
@@ -1279,7 +1236,7 @@ section for list  */
   height: 55px;
   border: none;
   border-radius: 50%;
-  background-color: #c58585;
+  background-color: #e13c3c;
   color: rgb(24, 23, 23);
   font-size: 22px;
   cursor: pointer;
@@ -1327,6 +1284,41 @@ section for list  */
     font-size: 22px;
   }
 }
+
+
+
+
+/* tast tast */
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #e05c5c;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch.active {
+  background-color: #9a1811;
+}
+
+.toggle-switch.active::before {
+  transform: translateX(30px);
+}
+
 
 
     

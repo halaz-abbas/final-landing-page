@@ -618,6 +618,36 @@
       behavior: "smooth"
     });
   });
+  
+  const toggle = document.getElementById("toggle");
+  const planCards = document.querySelectorAll(".plan-card");
+
+  // أسعار الشهرية
+  const monthlyPrices = ["$2.80", "$4.20", "$7.00"];
+  // أسعار السنوية
+  const yearlyPrices = ["$28.00", "$42.00", "$70.00"];
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    const isYearly = toggle.classList.contains("active");
+
+    planCards.forEach((card, index) => {
+      const priceElement = card.querySelector(".plan-price p");
+      const periodText = card.querySelector(".plan-price span");
+
+      if (isYearly) {
+        // عرض السعر السنوي
+        priceElement.textContent = yearlyPrices[index];
+        periodText.textContent = "Per year";
+      } else {
+        // عرض السعر الشهري
+        priceElement.textContent = monthlyPrices[index];
+        periodText.textContent = "Per month";
+      }
+    });
+  });
+
+
      
     </script>
   </body>
