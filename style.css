@@ -19,9 +19,9 @@ main {
 }
 
 .navbar-logo {
-  padding: 30px;
-  margin-left: 50px;
-  margin-right: 70px;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .nav-item {
@@ -1326,6 +1326,30 @@ html {
 }
 
 
+/* إزالة التزيين الافتراضي */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+/* الخط الأحمر */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* أسفل النص */
+  left: 0;
+  width: 0;
+  height: 2px; /* سمك الخط */
+  background-color: rgb(124, 56, 56);
+  transition: width 0.3s ease;
+}
+
+/* عند المرور على العنصر أو عند تفعيله */
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%; /* يظهر الخط كامل تحت النص */
+}
 
 
 

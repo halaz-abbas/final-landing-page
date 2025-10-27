@@ -22,45 +22,51 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <a class="navbar-logo" href="#">
-          <img
-            src="./assets/logo.png"
-            alt="logo"
-            width="70"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-       
+   <nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <div class="container">
+    <!-- شعار الموقع -->
+    <a class="navbar-logo" href="#">
+      <img src="./assets/logo.png" alt="logo" width="70" class="d-inline-block align-text-top" />
+    </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- زر القائمة للموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-          <ul class="navbar-nav align-items-lg-center">
-                 <li class="nav-item"><a class="nav-link" data-key="services" href="#">Our Services</a></li>
-        <li class="nav-item"><a class="nav-link" data-key="about" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" data-key="blog" href="#">Blog & News</a></li>
-        <li class="nav-item"><a class="nav-link" data-key="contact" href="#">Contact</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn" href="#login" data-key="account">Account</a></li>
-           
-            <div class="vertical-line"></div>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="assets/phone.png" /> +23452201066
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- 🌍 زر اختيار اللغة -->
-        <div class="ms-5">
-          <select id="languageSwitcher" class="form-select form-select-sm border-0 bg-light">
+
+    <!-- العناصر القابلة للطي -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <!-- روابط الصفحة -->
+        <li class="nav-item me-3"><a class="nav-link" style="white-space: nowrap;" data-key="services" href="#">Our Services</a></li>
+        <li class="nav-item me-3"><a class="nav-link" style="white-space: nowrap;" data-key="about" href="#">About</a></li>
+        <li class="nav-item me-3"><a class="nav-link" style="white-space: nowrap;" data-key="blog" href="#">Blog & News</a></li>
+        <li class="nav-item me-3"><a class="nav-link" style="white-space: nowrap;" data-key="contact" href="#">Contact</a></li>
+
+        <!-- زر الحساب بدون خلفية -->
+        <li class="nav-item me-2">
+          <a class="nav-link p-2" href="#login" data-key="account" style="white-space: nowrap;">Account</a>
+        </li>
+
+        <!-- خط عمودي + رقم الهاتف قريبين جدًا -->
+        <li class="nav-item d-flex align-items-center me-2">
+          <div class="vertical-line me-1"></div>
+          <a class="nav-link p-0" href="#" style="white-space: nowrap;"><img src="assets/phone.png" alt="Phone" /> +23452201066</a>
+        </li>
+
+        <!-- اختيار اللغة -->
+        <li class="nav-item">
+          <select id="languageSwitcher" class="form-select form-select-sm border-0 bg-light ms-1">
             <option value="en" selected>English</option>
             <option value="ar">العربية</option>
           </select>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-      </nav>
+  </div>
+</nav>
+
+
     
 
    
