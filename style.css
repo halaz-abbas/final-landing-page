@@ -19,7 +19,9 @@ main {
 }
 
 .navbar-logo {
-  padding-left: 70px;
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 70px;
 }
 
 .nav-item {
@@ -1288,7 +1290,7 @@ section for list  */
 
 
 
-/* tast tast */
+
 .toggle-switch {
   position: relative;
   width: 60px;
@@ -1318,6 +1320,12 @@ section for list  */
 .toggle-switch.active::before {
   transform: translateX(30px);
 }
+
+html {
+  transition: direction 0.4s ease, text-align 0.4s ease;
+}
+
+
 
 
 
